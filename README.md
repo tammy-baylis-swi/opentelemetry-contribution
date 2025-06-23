@@ -60,13 +60,13 @@ OTel is supported by several languages, including Python -- the focus for this k
 
 The functionality of the above components is defined by the [OTel Specification (spec)](https://opentelemetry.io/docs/specs/otel/) with most naming defined by the [OTel Semantic Conventions (semconv)](https://opentelemetry.io/docs/concepts/semantic-conventions/). But for an introduction to how OTel works, [Concepts](https://opentelemetry.io/docs/concepts/) will be an easier read. The Linux Foundation also offers a [free course, "Getting Started with OpenTelemetry"](https://training.linuxfoundation.org/blog/new-free-course-getting-started-with-opentelemetry-lfs148/), for those interested.
 
-<img src="https://github.com/tammy-baylis-swi/tb-scipy-2025/blob/main/what_is_otel.png">
+<img src="https://github.com/tammy-baylis-swi/opentelemetry-contribution/blob/4368ead6076157f0c031c49160810e18c7cd9201/img/what_is_otel.png">
 
 ### What does OTel Python do?
 
 OTel Python's [SDK](https://opentelemetry.io/docs/languages/python/instrumentation/) implements the generation of telemetry to describe "what happened" to running code. [Traces](https://opentelemetry.io/docs/concepts/signals/traces/) consist of individual building blocks called spans, and they capture the path of a request through an application or multiple applications ([distributed tracing](https://opentelemetry.io/docs/concepts/context-propagation/)). [Metrics](https://opentelemetry.io/docs/concepts/signals/metrics/) are measurements of software availability and performance, such as call durations or CPU/memory usage by a process. [Logs](https://opentelemetry.io/docs/concepts/signals/logs/) are classic, timestamped text records that can be correlated with traces for more context and deeper debugging. See the linked documentation for more information on these three signals.
 
-<img src="https://github.com/tammy-baylis-swi/tb-scipy-2025/blob/da895e99736560ce8666d2d480ce9a66013b6a14/signals.svg">
+<img src="https://github.com/tammy-baylis-swi/opentelemetry-contribution/blob/4368ead6076157f0c031c49160810e18c7cd9201/img/signals.svg">
 
 OTel Python's [instrumentation libraries](https://opentelemetry.io/docs/languages/python/libraries/) use the SDK to generate traces and metrics, either through [native support](https://opentelemetry.io/docs/languages/python/libraries/#use-natively-instrumented-libraries) (e.g. Elasticsearch client) or -- more commonly -- through community-managed instrumentors. The latter typically wrap common Python frameworks to intercept requests then describe them with trace and metrics generation. For example, [opentelemetry-instrumentation-flask](https://opentelemetry-python-contrib.readthedocs.io/en/latest/instrumentation/flask/flask.html) "instruments" a Flask server and generates telemetry over time as users make requests to the running service. See here for the [main list of community instrumentors](https://github.com/open-telemetry/opentelemetry-python-contrib/blob/main/instrumentation/README.md).
 
@@ -162,7 +162,7 @@ If you'd like to enhance OTel Python because you noticed something that could be
 
 The main requirement, common to all OTel repos and before you start working on your first OTel PR, is to associate your public GitHub account with [CNCF's Contributor License Agreement (CLA)](https://github.com/open-telemetry/community/blob/main/guides/contributor/CLA.md) using [Linux Foundation's EasyCLA](https://easycla.lfx.linuxfoundation.org/#/?version=2). This is a one-time process and will link your work either as an individual contributor or a corporate contributor (i.e. through your work email). This is required for all checks to pass on your OTel PRs:
 
-<img src="https://github.com/tammy-baylis-swi/tb-scipy-2025/blob/15bd2a20e2fa72372c2f38e16f83499701790ba8/easycla.png">
+<img src="https://github.com/tammy-baylis-swi/opentelemetry-contribution/blob/4368ead6076157f0c031c49160810e18c7cd9201/img/easycla.png">
 
 Make sure to also review OTel's [community guidelines](https://github.com/open-telemetry/community/blob/main/code-of-conduct.md) to maintain a welcoming, collaborative environment.
 
@@ -261,7 +261,7 @@ Here are the benefits we get from contributing to OTel Python:
    * If your account is associated with your employer, your company could rank on [this DevStats table](https://opentelemetry.devstats.cncf.io/d/5/companies-table).
    * After a lot of contributions to a particular repo, you may appear in a Thank You section!:
 
-<img src="https://github.com/tammy-baylis-swi/tb-scipy-2025/blob/40a8522ee4011412dbb1900f72171e1ad01f0563/thank_you_repo.png">
+<img src="https://github.com/tammy-baylis-swi/opentelemetry-contribution/blob/4368ead6076157f0c031c49160810e18c7cd9201/img/thank_you_repo.png">
 
 There are also some challenges to consider:
 
